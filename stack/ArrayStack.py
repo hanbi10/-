@@ -27,7 +27,7 @@ class AraayStack:
             print("stack overflow")
             
     def peek(self):
-        if not self.Empty():
+        if not self.isEmpty():
             return self.array[self.top]
         else:
             print("stack overflow")
@@ -42,3 +42,14 @@ if __name__ == "__main__":
         s.push(i)         # push 연산 5회
     print(' push 5회: ', s) # 스택 내용 출력
     # print(' push 5회: ', s.array)
+    
+    s.pop()
+    print(s)
+    print(s.peek())
+    s.pop()
+    print(s)
+    s.pop()
+    print(s)
+    s.pop()
+    print(s)
+    
