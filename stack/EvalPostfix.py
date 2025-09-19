@@ -22,5 +22,7 @@ if __name__ == "__main__":
     
     expr2 = ['1', '2', '/', '4', '*', '1', '4', '/', '*']
 
+
     print(expr1, ' --> ', evalPostfix(expr1))
     print(expr2, ' --> ', evalPostfix(expr2))
+    
