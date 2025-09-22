@@ -60,4 +60,6 @@ if __name__ == "__main__" :
     
     print('  중위표기: ', infix1)
     print('  후위표기: ', postfix1)
-    print('  계산결과: ', result1,)
+    print('  계산결과: ', result1, end = '₩n₩n')
+    
+    
