@@ -1,4 +1,4 @@
-class AraayStack:
+class ArrayStack:
     def __init__(self, capacity):
         self.capacity = capacity
         self.array = [None]*self.capacity
@@ -37,7 +37,7 @@ class AraayStack:
         return str(self.array[0:self.top+1]) #0~top+1까지만 찍겟다  -> 뒤의 None을 지우는 용도
     
 if __name__ == "__main__":
-    s = AraayStack(10)
+    s = ArrayStack(10)
     for i in range(1,6):  # i = 1, 2, 3, 4, 5
         s.push(i)         # push 연산 5회
     print(' push 5회: ', s) # 스택 내용 출력
