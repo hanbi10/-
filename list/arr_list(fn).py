@@ -14,7 +14,7 @@ def isEmpty():
 
 
 #포화 상태 검사 isFull()
-def isFull(): # size가 capacity이면 포화상태 비교 연산 size == capacity 결과를 바로 반환
+def isFull():
     return size == capacity
 
 #삽입 연산
@@ -23,7 +23,7 @@ def insert(pos, e):
     if not isFull() and 0 <= pos <= size:
         for i in range(size, pos, -1):
             array[i] = array[i-1]
-        array[pos] = e  # 수정: 새로운 요소를 삽입 위치에 저장
+        array[pos] = e 
         size += 1
     else:
         print("리스트 overflow 또는 유효하지 않은 삽입 위치")
@@ -43,7 +43,7 @@ def delete(pos):
         exit()
         
 def getEntry(pos):
-    if 0 <= pos < size:  # 수정: 0 <= pos < size
+    if 0 <= pos < size: 
         return array[pos]
     else:
         return None

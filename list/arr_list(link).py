@@ -35,7 +35,7 @@ class LinkedList:
         if before is None:
             self.head = Node(elem, self.head)
         else:
-            node = Node(elem, before.link)  # ✅ 오타 수정
+            node = Node(elem, before.link)  
             before.link = node
 
     def delete(self, pos):
