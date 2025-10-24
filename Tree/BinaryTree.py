@@ -1,6 +1,3 @@
-
-
-
 #이진 트리를 위한 노드 클래스
 class TNode:
     def __init__(self, elem, left, right):
