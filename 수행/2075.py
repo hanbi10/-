@@ -1,12 +1,10 @@
 #배열
 
-numbers = []  # 모든 입력 숫자를 담을 빈 리스트 초기화
+N = int(input())  # 몇 번째 큰 수를 찾을지 입력
+numbers = []
 
-for _ in range(N):  # N개의 줄을 반복
-    numbers.extend(map(int, input().split()))  
+for _ in range(N):
+    numbers.extend(map(int, input().split()))
 
-
-numbers.sort(reverse=True)  
-
-
-print(numbers[N-1])  
+numbers.sort(reverse=True)
+print(numbers[N-1])
