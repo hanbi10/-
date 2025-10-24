@@ -1,15 +1,12 @@
-import heapq
+#배열
 
-heap = []
-n = int(input())
+numbers = []  # 모든 입력 숫자를 담을 빈 리스트 초기화
 
-for _ in range(n):
-    numbers = map(int, input().split())
-    for number in numbers:
-        if len(heap) < n: # heap의 크기를 n개로 유지
-            heapq.heappush(heap, number)
-        else:
-            if heap[0] < number:
-                heapq.heappop(heap)
-                heapq.heappush(heap, number)
-print(heap[0])
+for _ in range(N):  # N개의 줄을 반복
+    numbers.extend(map(int, input().split()))  
+
+
+numbers.sort(reverse=True)  
+
+
+print(numbers[N-1])  
