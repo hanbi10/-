@@ -108,19 +108,48 @@ def calc_height(n):
 
 
 
+# #02 레벨순회
+# if __name__ == "__main__":
+#     print("\n======= 이진트리 테스트 =======")
+#     d = TNode('A', None, None)
+#     e = TNode('B', None, None)
+#     b = TNode('*', d, e)
+#     f = TNode('C', None, None)
+#     g = TNode('D', None, None)
+#     c = TNode('/', f, g)
+#     root = TNode('+', b, c)
+    
+    
+    
+#     print('\n  In-Order : ', end = '')
+#     inorder(root)
+#     print('\n  Pre-Order : ', end = '')
+#     preorder(root)
+#     print('\n  Post-Order : ', end = '')
+#     postorder(root)
+#     print('\n  Level-Order : ', end = '')
+#     levelorder(root)
+#     print()
+    
+    
+#     print(" 노드의 개수 = %d개" % count_node(root))
+#     print(" 단말의 개수 = %d개" % count_left(root))
+#     print(" 트리의 높이 = %d개" % calc_height(root))
 
 
-
-#02 레벨순회
+#03 수식을 트리로 구성하여 표기
 if __name__ == "__main__":
     print("\n======= 이진트리 테스트 =======")
-    d = TNode('A', None, None)
-    e = TNode('B', None, None)
-    b = TNode('*', d, e)
-    f = TNode('C', None, None)
-    g = TNode('D', None, None)
-    c = TNode('/', f, g)
-    root = TNode('+', b, c)
+
+    h = TNode('2', None, None)
+    g =TNode('3', None, None)
+    b = TNode('*', g, h)
+    f = TNode('2', None, None)
+    e = TNode('8', None, None)
+    d = TNode('3', None, None)
+    c = TNode('/', e, f)
+    a = TNode('-', c, d)
+    root = TNode('+', a, b)
     
     
     
@@ -137,4 +166,4 @@ if __name__ == "__main__":
     
     print(" 노드의 개수 = %d개" % count_node(root))
     print(" 단말의 개수 = %d개" % count_left(root))
-    print(" 트리의 높이 = %d개" % calc_height(root))
+#     print(" 트리의 높이 = %d개" % calc_height(root))
