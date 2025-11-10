@@ -1,4 +1,4 @@
-#최소힙의 삽입 알고리즘
+#최대힙의 삽입 알고리즘
 def heappush(heap, n):
     heap.append(n)
     i = len(heap) - 1
