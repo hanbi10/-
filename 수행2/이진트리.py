@@ -119,3 +119,5 @@ print("\n=== 응급도 3단계 환자 ===")
 urgency_3 = bst.find_urgency(3)
 for patient in urgency_3:
     print(f"- {patient['이름']} ({patient['증상']})")
+
+
